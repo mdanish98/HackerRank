@@ -1,0 +1,45 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+import collections as cl
+h = 0
+n = 3 #input().split()
+m = 2
+cA = 0
+cB = 0
+listD = [1 , 5 , 3] #list(map(int, input().split()))
+A = [3, 1] #list(map(int, input().split()))
+B = [5, 7] #list(map(int, input().split()))
+
+#cl.Counter(listD)
+res = sum(x==y for x,y in zip(listD, A))
+res1 = sum(x1==y1 for x1,y1 in zip(listD, B))
+print(res1)
+
+'''
+for i in listD:
+    if i in A:
+        h += 1
+    if i in B:
+        h -= 1
+'''
+'''
+for i in A:
+    cA = listD.count(i)
+for j in B:
+    cB = listD.count(j)
+print(cA - cB)
+'''
+'''
+for i in listD:
+    if i in A:
+        h += 1
+    if i in B:
+        h -= 1
+'''
+print(res - res1)    
+
